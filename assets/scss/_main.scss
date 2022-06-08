@@ -1,0 +1,213 @@
+@import "./variables";
+
+.banner{
+	position: relative;
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding: 0 40px;
+	display: flex;
+	justify-content: start;
+	align-items: flex-end;
+	margin-bottom: 5px;
+	max-height: 300px;
+	&-rating{
+		margin-top: 10px;
+	}
+	&-title{
+		@include fonts($rubik, 63px, 700, 75px, $text);
+		text-transform: capitalize;
+		text-shadow: 0px 4px 4px #212129;
+		max-width: 692px;
+		margin-top: 36px;
+   	margin-bottom: 20px;
+   	margin-right: 135px;
+	}
+	&-box{
+		display: flex;
+		align-items: center;
+		margin-bottom: 20px;
+		&-btn{
+			margin: 25px 20px 25px 0;
+		}
+		&-singup{
+			@include fonts($rubik, 23px, 700, 27px, $title);
+			text-transform: uppercase;
+			background: $signup;
+			border-radius: 6px;
+			padding: 15px 75px 13px;
+		}
+		&-rating{
+			display: flex;
+			flex-direction: column;
+			&-item{
+				display: flex;
+			}
+			&-title{
+				@include fonts($roboto, 17px, 700, 20px, $title);
+				margin: 0;
+			}
+			&-star{
+				margin-right:4.5px;
+				width: 20px;
+				height: 20px;
+			}
+			&-voice{
+				@include fonts($roboto, 17px, 700, 20px, $text);
+				margin: 0;
+			}
+		}
+		.banner-box-rating-safe>span{
+			@include fonts($roboto, 16px, 400, 19px, $title);
+			margin-left: 0;
+			display: block;
+			margin-top: 5px;
+		}
+	}
+	&-img{
+		max-width: 452px;
+		height: auto;
+	}
+}
+.rank-rating{
+	margin: 0;
+}
+.contant{
+	&-title{
+		@include fonts($rubik, 53px, 700, 63px, $title);
+		text-transform: uppercase;
+		margin: 15px 0;
+	}
+	&-text {
+		p{
+		@include fonts($roboto, 16px, 400, 24px, $title);
+		margin: 15px 0;
+		}
+		ul, ol{
+			margin-block-start: 0;
+			padding-inline-start: 20px;
+			margin-bottom: 0;
+			li{
+				@include fonts($roboto, 16px, 400, 24px, $title);
+				margin-top: 15px;
+				margin-bottom: 0;
+			}
+		}
+	}
+}
+.banner2{
+	position: relative;
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 15px;
+	&-box{
+		z-index: 3;
+		position: absolute;
+		left: 50%;
+		transform:translate(-50%);
+		text-align: center;
+		&-text{
+			@include fonts($rubik, 33px, 500, 39px, $title);
+			text-transform: uppercase;
+			margin-top: 26px;
+			.pink{
+				@include fonts($rubik, 43px, 700, 51px, $signup);
+				text-transform: uppercase;
+			}
+			.blue{
+				@include fonts($rubik, 43px, 700, 51px,  rgb(62, 62, 244));
+				text-transform: uppercase;
+			}
+			.bold{
+				@include fonts($rubik, 43px, 700, 51px, $title);
+				text-transform: uppercase;
+			}
+		}
+		&-singup{
+			@include fonts($roboto, 23px, 700, 27px, $title);
+			text-transform: uppercase;
+			background: $signup;
+			border-radius: 6px;
+			padding: 15px 75px 13px;
+		}
+	}
+	&-img{
+	 z-index: 2;
+	 height: auto;
+    max-width: 470px;
+	}
+}
+.btn-box{
+	margin-top: 35px;
+   margin-bottom: 35px;
+}
+.text-btn{
+	text-align: center;
+   padding-top: 30px;
+	padding-bottom: 15px;
+}
+.description{
+	display: flex;
+	flex-direction: column;
+	&-title{
+		margin-top: 15px;
+		margin-bottom: 5px;
+		@include fonts($rubik, 53px, 700, 63px, $title);
+		text-transform: uppercase;
+	}
+	&-text{
+		p{
+			 @include fonts($roboto, 16px, 400, 24px, $title);
+			 margin-top:10px;
+		}
+		ul,ol{
+			margin-block-start: 0;
+			padding-inline-start: 20px;
+			margin-bottom: 0;
+			li{
+				@include fonts($roboto, 16px, 400, 24px, $title);
+				margin-top: 15px;
+				margin-bottom: 0;
+			}
+		}
+	}
+}
+.questions{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 25px;
+	&-title{
+		@include fonts($roboto, 53px, 700, 63px, $title);
+		text-transform: uppercase;
+		margin-top: 15px;
+		margin-bottom: 20px;
+	}
+	&-contant{
+		&-box{
+			display: flex;
+			justify-content: space-between;
+			background: rgba(48, 41, 75, 0.5);
+			border-radius: 146px;
+			max-width: 1380px;
+			box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+			padding: 5px;
+			margin-bottom: 15px;
+			&-title{
+				width: 50%;			
+				@include fonts($roboto, 21px, 700, 25px, $signup);
+				text-shadow: 0px 1px 1px #4A3323;
+				margin: 0;
+				padding: 17px 0 0 35px;
+				text-align: center;
+			}
+			&-answer{
+				width: 70%;	
+				@include fonts($roboto, 16px, 400, 25px, $title);
+				margin: 0;
+				padding: 17px 0 0 5px;
+			}
+		}
+	}
+}

@@ -1,0 +1,32 @@
+//  color
+
+$bg: rgba(32, 30, 48, 1);
+$orangepink: rgb(238, 149, 87);
+$violet:rgba(40, 35, 61, 1);
+$signup:rgba(253, 45, 94, 1);
+$login:rgba(62, 62, 244, 1);
+$brown:rgb(178, 89, 27);
+$text:rgba(240, 240, 240, 1);
+$pink:rgb(249, 178, 124);
+$border:rgb(97, 13, 119);
+$title:rgb(255, 255, 255);
+$pinkshadow:rgb(208, 119, 57);
+$textshadow:rgb(33, 33, 41);
+$textquestions: rgb(148, 59, 0);
+
+
+// fonts
+
+$roboto:'Roboto', sans-serif;
+$rubik:'Rubik', sans-serif;
+$poppins: 'Poppins', sans-serif;
+
+// mixin
+
+@mixin fonts($font,$size,$weight,$height, $color){
+	font-family: $font;
+	font-size: $size;
+	font-weight: $weight;
+	line-height: $height;
+	color: $color;
+}

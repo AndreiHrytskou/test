@@ -1,0 +1,55 @@
+@import "./variables";
+
+.download-container{
+	// min-height: 265px;
+	display: flex;
+	justify-content: space-around;
+}
+.download{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+	&-img{
+		max-width: 281px;
+	}
+	&-box{
+		display: flex;
+		align-items: center;
+		gap: 49px;
+		background: $signup;
+		border-radius: 6px;
+		padding: 2px 90px;
+		box-shadow: 0px 4px 0px #AD000E;
+		&-singup{
+			@include fonts($poppins, 30px, 700, 36px, $title);
+			text-transform: uppercase;
+			
+		}
+	}
+	&-rating{
+		margin: 40px 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		.mobile-rank-wrap{
+			text-align: center;
+		}
+		.mobile-rank-text{
+			@include fonts($poppins, 30px, 700, 36px, $title);
+		}
+		.mobile-rank-star-block{
+			margin-bottom: 11px;
+		}
+		.mobile-rank-value{
+			text-align: center;
+			@include fonts($roboto, 34px, 900, 40px, #FFFAF3);
+		}
+		.mobile-rank-num{
+			@include fonts($roboto, 54px, 900, 63px, $signup);
+		}
+		.mobile-rank-best{
+			@include fonts($roboto, 34px, 900, 40px, $signup);
+		}
+	}
+}

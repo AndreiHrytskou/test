@@ -1,0 +1,119 @@
+@import "./variables";
+
+
+html,body{
+	margin: 0;
+	padding: 0;
+	background: $bg;
+}
+a{
+	text-decoration: none;
+}
+
+.wrapper{
+	width: 100%;
+	background: $bg;
+   
+}
+.container{
+	max-width: 1440px;
+	margin:auto;
+	width: 90%;
+}
+.header{
+	margin-top: 20px;
+	position: relative;
+   min-height: 100px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding-left: 40px;
+   padding-right: 40px;
+	&-menu{
+		position: relative;
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		z-index: 3;
+		&-item{
+			text-decoration: none;
+			font-style: normal;
+			@include fonts($roboto, 17px, 700, 20px, $text);
+			text-transform: uppercase;
+			margin-top: 3px;
+			z-index: 3;
+		}
+	}
+	&-logo{
+		display: flex;
+		align-items: center;
+		text-align: center;
+		position: relative;
+		z-index: 3;
+		&-link{
+			display: inline-block;
+			img {
+				height: auto;
+				max-width: 100%;
+			}
+		}
+	}
+	&-btn-in {
+    margin-left: 25px;
+	}
+}
+.mobileap {
+	margin-left: 70px;
+}
+.bonmenu {
+    display: none;
+}
+.header::before{
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: $violet;
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+		z-index: 2;
+	}
+.bonuses {
+    width: 441px;
+    z-index: 3;
+}
+
+.button-signup{
+  text-decoration: none;
+  padding: 17px 39px 15px;
+  @include fonts($rubik, 23px, 700, 27px, $title);
+  text-transform: uppercase;
+  font-style: normal;
+  border-radius: 6px;
+  background: $signup;
+ }
+.button-login{
+  text-decoration: none;
+  padding: 17px 50px 15px;
+  @include fonts($rubik, 23px, 700, 27px, $text);
+  text-transform: uppercase;
+  font-style: normal;
+  border-radius: 6px;
+  background: $login;
+}
+.country{
+	margin-left: 30px;
+	max-width: 45px;
+	max-height: 45px;
+}
+.header-menu-toggle {
+    display: none;
+}
+
+@import "./main";
+@import "./footer";
+@import "./bonuses";
+@import "./mobile-app";
+@import "./404";
+@import "./media-query";

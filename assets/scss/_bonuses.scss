@@ -1,0 +1,64 @@
+@import "./variables";
+
+.banner-title{
+	padding-top: 0;
+}
+.page{
+	position: absolute;
+   left: 40px;
+   top: 20px;
+}
+.page a{
+	@include fonts($poppins, 16px, 600, 22px, rgb(155, 155, 155));
+	text-transform: uppercase;
+}
+.page-link::after{
+	content: "-";
+	color: $title;
+	margin-left: 2px;
+	margin-right: 2px;
+}
+.check a{
+	@include fonts($poppins, 16px, 600, 22px, $title);
+}
+.banner3-title{
+	@include fonts($rubik, 53px, 700, 63px, $title);
+	margin: 20px 0 0 0;
+}
+.banner3{
+	margin-top: 15px;
+	margin-bottom: 20px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	&-box{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		&-left{
+			width: 512px;
+			max-height: 326px;
+		}
+		&-text{
+			width: 82%;
+			p{
+			@include fonts($roboto, 16px, 400, 25px, $title);
+			margin-top: 26px;
+		   }
+		}
+		&-singup{
+			@include fonts($roboto, 23px, 700, 27px, $title);
+			text-transform: uppercase;
+			background: $signup;
+			border-radius: 6px;
+			padding: 15px 75px 13px;
+		}
+	}
+}
+.banner3:last-child{
+	margin-bottom: 0;
+}
+.bonuses-btn-box{
+	padding-top: 30px;
+	padding-bottom: 15px;
+	text-align: center;
+}
